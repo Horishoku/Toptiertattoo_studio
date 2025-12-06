@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Your Tattoo Studio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- 상단 내비게이션 -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">YOUR STUDIO NAME</div>
+      <nav class="nav">
+        <a href="#home">Home</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#about">About</a>
+        <a href="#booking">Booking</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 메인 Hero 섹션 -->
+  <section id="home" class="hero">
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <h1>Fine Line & Black & Grey Tattoo</h1>
+        <p>
+          Tattoo artist based in Halifax, Nova Scotia, Canada.<br />
+          Custom designs, clean work, and a calm studio atmosphere.
+        </p>
+        <a href="#booking" class="btn-primary">Request a Booking</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 포트폴리오 섹션 -->
+  <section id="portfolio" class="section">
+    <div class="container">
+      <h2>Portfolio</h2>
+      <p class="section-intro">
+        A selection of recent works. More can be seen on Instagram.
+      </p>
+      <div class="grid">
+        <!-- 여기 img src 에 나중에 너 작업사진 경로 넣으면 돼 -->
+        <div class="card">
+          <div class="placeholder-img">Artwork 1</div>
+          <p>Fine line floral piece · Forearm</p>
+        </div>
+        <div class="card">
+          <div class="placeholder-img">Artwork 2</div>
+          <p>Black & grey skull · Upper arm</p>
+        </div>
+        <div class="card">
+          <div class="placeholder-img">Artwork 3</div>
+          <p>Script lettering · Wrist</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 소개 섹션 -->
+  <section id="about" class="section section-alt">
+    <div class="container">
+      <h2>About</h2>
+      <p class="section-intro">
+        I’m a tattoo artist based in Halifax, Nova Scotia, Canada, focusing on
+        fine line and black & grey tattoos.
+      </p>
+      <p>
+        I aim to create designs that fit each client’s body and story. My work
+        balances clean linework, subtle shading, and a calm, focused approach
+        to every session.
+      </p>
+      <p>
+        I currently work in a private studio in Halifax. Sessions are by
+        appointment only.
+      </p>
+    </div>
+  </section>
+
+  <!-- 예약/견적 섹션 -->
+  <section id="booking" class="section">
+    <div class="container">
+      <h2>Booking & Quotes</h2>
+      <p class="section-intro">
+        Please fill out this form to request a booking or price estimate.
+        I will get back to you by email to confirm details.
+      </p>
+      <form class="booking-form" method="POST" action="#">
+        <!-- 나중에 Formspree 연결할 때 action 부분만 바꿀 거야 -->
+        <div class="form-row">
+          <label>
+            Name
+            <input type="text" name="name" required />
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" required />
+          </label>
+        </div>
+        <div class="form-row">
+          <label>
+            Placement (e.g. forearm, upper arm)
+            <input type="text" name="placement" />
+          </label>
+          <label>
+            Approx. size (cm or “card / phone size”)
+            <input type="text" name="size" />
+          </label>
+        </div>
+        <div class="form-row">
+          <label>
+            Style
+            <select name="style">
+              <option value="">Select style</option>
+              <option value="fine line">Fine line</option>
+              <option value="black & grey">Black & grey</option>
+              <option value="lettering">Lettering</option>
+              <option value="other">Other / Mix</option>
+            </select>
+          </label>
+          <label>
+            Budget (CAD)
+            <input type="text" name="budget" />
+          </label>
+        </div>
+        <div class="form-row">
+          <label>
+            Available days / time (weekdays, weekends, morning, afternoon, etc.)
+            <input type="text" name="availability" />
+          </label>
+        </div>
+        <div class="form-row">
+          <label>
+            Tattoo idea / details
+            <textarea name="details" rows="5" placeholder="Please describe your idea in as much detail as you like."></textarea>
+          </label>
+        </div>
+        <p class="form-note">
+          This form is a request only. Your appointment is not confirmed until
+          you receive a confirmation message.
+        </p>
+        <button type="submit" class="btn-primary">Submit Request</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FAQ 섹션 -->
+  <section id="faq" class="section section-alt">
+    <div class="container">
+      <h2>FAQ</h2>
+      <div class="faq-item">
+        <h3>Do you require a deposit?</h3>
+        <p>
+          Yes. A non-refundable deposit is required to secure your appointment.
+          The deposit goes toward the final price of your tattoo.
+        </p>
+      </div>
+      <div class="faq-item">
+        <h3>What is your minimum charge?</h3>
+        <p>
+          The minimum charge depends on the studio policy and design details.
+          Please contact me with your idea for an estimate.
+        </p>
+      </div>
+      <div class="faq-item">
+        <h3>How should I prepare for my appointment?</h3>
+        <p>
+          Please sleep well, eat before your session, stay hydrated, and avoid
+          alcohol or blood-thinning substances before your appointment.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 연락 섹션 -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>Contact</h2>
+      <p class="section-intro">
+        For general questions, please email me or message me on Instagram.
+      </p>
+      <p>
+        Email: <a href="mailto:youremail@example.com">youremail@example.com</a><br />
+        Instagram: <a href="https://instagram.com/yourinstagram" target="_blank">@yourinstagram</a><br />
+        Location: Halifax, Nova Scotia, Canada
+      </p>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Your Tattoo Studio · Halifax, Nova Scotia, Canada</p>
+    </div>
+  </footer>
+
+  <script>
+    // 푸터 연도 자동 업데이트
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
